@@ -1,7 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
-module.exports = {
+module.exports = [{
   entry: './src/index.tsx',
   module: {
     rules: [
@@ -19,4 +19,4 @@ module.exports = {
     filename: 'public/bundle.js',
     path: __dirname
   }
-};
+}];

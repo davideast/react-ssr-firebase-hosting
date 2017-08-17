@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "webpack": "node_modules/.bin/webpack",
     "build:server": "rm -rf es2015 && node_modules/.bin/tsc -p tsconfig.server.json && node_modules/.bin/rollup -c rollup.config.js",
     "build:dev": "node_modules/.bin/webpack && yarn build:server",
     "build:prod": "node_modules/.bin/webpack -p && yarn build:server",

@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "es2015",
+    "outDir": "es2015",
+    "moduleResolution": "node"
+  },
+  "files": [
+    "src/index.server.tsx"
+  ]
+}

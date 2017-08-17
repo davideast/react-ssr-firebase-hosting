@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "non-ssr-react",
+    "ssr": "ssr-react",
+    "nonssr": "non-ssr-react"
+  }
+}

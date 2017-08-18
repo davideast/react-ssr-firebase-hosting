@@ -4,9 +4,8 @@
 </div>
 
 ### 10000ft view
-- TypeScript for happiness
 - Webpack to bundle the client
-- TypeScript for the server
+- Babel to CommonJS for the server
 
 ### Run it
 ```

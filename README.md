@@ -6,7 +6,7 @@
 ### 10000ft view
 - TypeScript for happiness
 - Webpack to bundle the client
-- Rollup to bundle the server
+- TypeScript for the server
 
 ### Run it
 ```

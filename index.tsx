@@ -11,11 +11,10 @@ const app = express();
 app.get('**', async (req, res) => {
   const facts = await getFacts();
   const html = renderToString(<App facts={facts} />);
-  const listHtml = index.replace('<!-- ::APP:: -->', html);
-  const finalHtml = listHtml.replace('/** ::FACTS:: **/', JSON.stringify(facts));
+  const finalHtml = index.replace('<!-- ::APP:: -->', html);
   res.send(finalHtml);
 });
 
-export let trigger = functions.https.onRequest(app);
+export let ssrapp = functions.https.onRequest(app);
 
 //app.listen(3006, () => { console.log('Listening on 3006.'); });

@@ -2,9 +2,6 @@
   "projects": {
     "default": "non-ssr-react",
     "ssr": "ssr-react",
-    "nonssr": "non-ssr-react",
-    "reactssr": "react-ssr-2e070",
-    "ssrfacts": "facts-ssr-react",
-    "abc": "alwaysbecaching"
+    "nonssr": "non-ssr-react"
   }
 }

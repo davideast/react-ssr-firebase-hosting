@@ -12,9 +12,9 @@ app.get('**', async (req, res) => {
   const facts = await getFacts();
   const html = renderToString(<App facts={facts} />);
   const finalHtml = index.replace('<!-- ::APP:: -->', html);
+  res.set('Cache-Control', 'public, max-age=600, s-maxage=1200');
   res.send(finalHtml);
 });
 
-export let ssr = functions.https.onRequest(app);
-
+export let ssrapp = functions.https.onRequest(app);
 //app.listen(3006, () => { console.log('Listening on 3006.'); });

@@ -4,10 +4,11 @@ const path = require('path');
 module.exports = [{
   entry: './src/index.js',
   module: {
-    loaders: [
-      { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
-      { test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/ }
-    ]
+    rules: [{
+      test: /\.jsx?$/,
+      exclude: /node_modules/,
+      use: 'babel-loader'
+    }]
   },
   output: {
     filename: 'public/bundle.js',

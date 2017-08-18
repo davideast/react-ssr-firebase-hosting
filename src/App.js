@@ -1,5 +1,4 @@
-import React from 'react';
-import { render } from 'react-dom';
+import { h } from 'preact';
 
 export default function App(props) {
   function handleClick(fact) {

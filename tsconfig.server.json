@@ -2,11 +2,11 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "target": "es2015",
-    "module": "es2015",
-    "outDir": "es2015",
+    "module": "commonjs",
+    "outDir": "./functions",
     "moduleResolution": "node"
   },
   "files": [
-    "src/index.server.tsx"
+    "index.tsx"
   ]
 }

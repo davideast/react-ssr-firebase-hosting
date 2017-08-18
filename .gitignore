@@ -1,4 +1,4 @@
 node_modules
-es2015
+functions/src
 functions/index.js
 .DS_Store

@@ -1,14 +1,10 @@
 import * as React from 'react';
 import { renderToString } from 'react-dom/server';
-import App from './App';
-import getFacts from './facts';
-import * as express_ from 'express';
-import * as fs_ from 'fs';
-import * as functions_ from 'firebase-functions';
-
-let express = express_;
-let fs = fs_;
-let functions = functions_;
+import App from './src/App';
+import getFacts from './src/facts';
+import * as express from 'express';
+import * as fs from 'fs';
+import * as functions from 'firebase-functions';
 
 const index = fs.readFileSync(__dirname + '/index.template.html', 'utf8');
 const app = express();

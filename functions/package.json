@@ -1,12 +1,13 @@
 {
   "name": "functions",
-  "description": "Cloud Functions for Firebase",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
   "dependencies": {
-    "firebase-admin": "~4.2.1",
-    "firebase-functions": "^0.5.7",
-    "isomorphic-fetch": "^2.2.1",
+    "express": "^4.15.4",
+    "firebase-admin": "^5.2.1",
+    "firebase-functions": "^0.6.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
-  },
-  "private": true
+  }
 }

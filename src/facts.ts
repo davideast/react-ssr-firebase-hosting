@@ -1,7 +1,4 @@
-import * as fetch_ from 'isomorphic-fetch';
-
-// This is needed for rollup
-let fetch = fetch_;
+import * as fetch from 'isomorphic-fetch';
 
 export default async function getFacts() {
   const res = await fetch("https://non-ssr-react.firebaseio.com/facts.json");

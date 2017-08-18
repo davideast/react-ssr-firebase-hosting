@@ -11,7 +11,8 @@ const app = express();
 app.get('**', async (req, res) => {
   const facts = await getFacts();
   const html = renderToString(<App facts={facts} />);
-  const finalHtml = index.replace('<!-- ::APP:: -->', html);
+  const listHtml = index.replace('<!-- ::APP:: -->', html);
+  const finalHtml = listHtml.replace('/** ::FACTS:: **/', JSON.stringify(facts));
   res.send(finalHtml);
 });
 

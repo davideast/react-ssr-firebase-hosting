@@ -15,6 +15,6 @@ app.get('**', async (req, res) => {
   res.send(finalHtml);
 });
 
-export let trigger = functions.https.onRequest(app);
+export let ssr = functions.https.onRequest(app);
 
 //app.listen(3006, () => { console.log('Listening on 3006.'); });
